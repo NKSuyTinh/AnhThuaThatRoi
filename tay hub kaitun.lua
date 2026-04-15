@@ -1,5 +1,5 @@
--- [Tày Hub 1 lần = vĩnh viễn]
---   Tày Hub 1 lần = vĩnh viễn KEY GATE
+-- [NamKhanhVN
+--    NamKhanhVN DZ
 -- =======================
 
 local Players      = game:GetService("Players")
@@ -8,19 +8,8 @@ local HttpService  = game:GetService("HttpService")
 local SoundService = game:GetService("SoundService")
 local plr          = Players.LocalPlayer
 
-local SERVER  = "https://link4sub.com/ItRutr5UG"
-local DISCORD = "https://discord.gg/ph5CznY9PU"
-local GETKEY  = SERVER.."4"
+local DISCORD = "https://discord.gg/h9p5aJHP"
 
--- HWID
-local function getHWID()
-    local ok, id = pcall(function()
-        return game:GetService("RbxAnalyticsService"):GetClientId()
-    end)
-    if ok and id and id ~= "" then return id end
-    return tostring(plr.UserId).."_"..tostring(game.PlaceId)
-end
-local HWID = getHWID()
 
 -- Sounds
 local function S(id,v) local s=Instance.new("Sound");s.SoundId="rbxassetid://"..id;s.Volume=v;s.Parent=SoundService;return s end
@@ -326,7 +315,7 @@ local function doVerify()
 
                 -- ScreenGui
                 local wSG = Instance.new("ScreenGui")
-                wSG.Name           = "TàyHubHub_KeyTimer"
+                wSG.Name           = "NamKhanhVN"
                 wSG.ResetOnSpawn   = false
                 wSG.IgnoreGuiInset = true
                 wSG.DisplayOrder   = 8888
@@ -485,7 +474,7 @@ end;
 		"Bizarre Revolver";
 		"Bazooka"
 	};
-	["FPS Booster"] = false
+	["FPS Booster"] = true
 }
 wait(5)
 if game["Players"]["LocalPlayer"]["PlayerGui"]:FindFirstChild("Main (minimal)") then
